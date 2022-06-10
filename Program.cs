@@ -26,16 +26,15 @@ namespace ONotation
 
             //logarithmic
             // Fun(32);
-            FunRecursive(30);
+            // FunRecursive(30);
 
             /* linear */
             // PrintArray(new string[] { "jone", "mary", "salami" });
-            //Bars(5);
+            // Bars(5);
 
             /* loglinear */
             // BarsWithLogLinear("abcdefghijklmnopqrstuvwxyz");
-
-            //FooWithLogLinear(new string[] { "a", "b", "c", "d", "e", "f", "g", "h" });
+            // FooWithLogLinear(new string[] { "a", "b", "c", "d", "e", "f", "g", "h" });
 
             /* polynomials */
             //FooPolynomial(new string[] { "pillar", "salt", "office" });
@@ -284,7 +283,7 @@ namespace ONotation
         /* O(n*log(n)) loglinear examples */
         //the BarsWithLogLinear funct is called a O(log(n)) of times but for
         //each call substring funct performs a linear O(n) operation
-        //final complexity = O(n*log(n))
+        //final complexity => O(n*log(n))
         public static void BarsWithLogLinear(string input)
         {
             System.Console.WriteLine(input);
@@ -297,7 +296,7 @@ namespace ONotation
         }
 
         /*  the problem can best b illustrated with a tree
-        work done across the width (i.e at each level) = n
+            work done across the width (i.e at each level) = n
             height = log(n) due to halving of the strin in each funct call
             final complexity = O(n*log(n)) 
         */
