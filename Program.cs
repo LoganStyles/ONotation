@@ -37,7 +37,7 @@ namespace ONotation
             // FooWithLogLinear(new string[] { "a", "b", "c", "d", "e", "f", "g", "h" });
 
             /* polynomials */
-            //FooPolynomial(new string[] { "pillar", "salt", "office" });
+            // FooPolynomial(new string[] { "pillar", "salt", "office" });
             // BarPolynomial(new string("emmanuel"));
 
             /* exponentials */
@@ -53,8 +53,8 @@ namespace ONotation
             // var clothes = new string[] { "shirt", "jeans", "skirt" };
             // CrossPairs(colors, clothes);
 
-            FooMultipleArgs2("swim", "run");
-            FooMultipleArgs2("coat", "jacket");
+            // FooMultipleArgs2("swim", "run");
+            // FooMultipleArgs2("coat", "jacket");
         }
 
         // time: O(n) where n is the length of the input array
@@ -352,7 +352,7 @@ namespace ONotation
             BarPolynomial(rest); //each recursive call O(n)
         }
 
-        /* Polynomials */
+        /* Exponentials */
         public static void FooExponential(int input)
         {
             if (input == 1)
