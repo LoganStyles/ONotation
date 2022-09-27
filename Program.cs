@@ -407,7 +407,7 @@ namespace ONotation
             }
         }
 
-        //O(max(m,n)) where m and n are the string lengths
+        //O(max(m,n)) where m and n are the lengths of the first & second string inputs
 
         //or O(n) where n is the length of the longer string
         public static void FooMultipleArgs2(string input1, string input2)
