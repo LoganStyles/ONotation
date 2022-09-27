@@ -284,7 +284,7 @@ namespace ONotation
 
         /* O(n*log(n)) loglinear examples */
         //the BarsWithLogLinear funct is called a O(log(n)) of times but for
-        //each call substring funct performs a linear O(n) operation
+        //each call, the Substring funct performs a linear O(n) operation
         //final complexity => O(n*log(n))
         public static void BarsWithLogLinear(string input)
         {
@@ -299,7 +299,7 @@ namespace ONotation
 
         /*  the problem can best b illustrated with a tree
             work done across the width (i.e at each level) = n
-            height = log(n) due to halving of the strin in each funct call
+            height = log(n) due to halving of the string in each funct call
             final complexity = O(n*log(n)) 
         */
         public static void FooWithLogLinear(string[] array)
@@ -341,7 +341,9 @@ namespace ONotation
             }
         }
 
-        /* each recursive call */
+        /* each recursive call 
+        O(n) * O(n)=> O(n^2)
+        */
         public static void BarPolynomial(string input)
         {
             if (input.Length == 0)
