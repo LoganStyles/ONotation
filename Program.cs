@@ -41,6 +41,9 @@ namespace ONotation
             /* polynomials */
             // FooPolynomial(new string[] { "pillar", "salt", "office" });
             // BarPolynomial(new string("emmanuel"));
+            // var result = UniqueWithHashSet(new string[] { "cat", "bird", "rat", "bird", "dog" });
+            // foreach (var item in result)
+            //     Console.Write($"{item} ");
 
             /* exponentials */
             // FooExponential(4);
@@ -190,16 +193,16 @@ namespace ONotation
         /* time: O(N^2)
             space: O(N)
         */
-        public static int[] Unique(int[] array)
+        public static string[] Unique(string[] array)
         {
-            var newArray = new int[array.Length];
+            var newArray = new string[array.Length];
             var count = 0;
 
             for (var i = 0; i < array.Length; i++)
             {
                 var ele = array[i];
 
-                if (!newArray.Contains(ele))
+                if (!newArray.Contains(ele)) //perform linear scan
                     newArray[count++] = ele;
             }
 
@@ -211,16 +214,13 @@ namespace ONotation
         space: O(N)
         */
 
-        public static int[] UniqueWithHashSet(int[] array)
+        public static string[] UniqueWithHashSet(string[] array)
         {
-            var newSet = new HashSet<int>(); //O(1)
+            var newSet = new HashSet<string>(); //O(1)
 
             for (var i = 0; i < array.Length; i++) //O(N)
             {
-                var ele = array[i];
-
-                if (!newSet.Contains(ele))
-                    newSet.Add(ele);
+                    newSet.Add(array[i]); //O(1)
             }
             return newSet.ToArray(); //O(N)
         }
