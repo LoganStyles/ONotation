@@ -14,6 +14,8 @@ namespace ONotation
             // Foo(10);
             // Bar(10);
             // Boom(10);
+            //Doubler(new char[] { 'a', 'b', 'c' });
+
 
             /* space examples */
             /* recursive example */
@@ -60,15 +62,15 @@ namespace ONotation
         // time: O(n) where n is the length of the input array
         public static int CalculateAverage(int[] numbers)
         {
-            int sum = 0;
+            int average = 0;
 
             for (var i = 0; i < numbers.Length; i++)
             {
                 var number = numbers[i];
-                sum += number;
+                average += number;
             }
 
-            return sum / numbers.Length;
+            return average / numbers.Length;
         }
 
         //O(N^2) where N is the size of the input
@@ -136,10 +138,10 @@ namespace ONotation
         }
 
         //space: O(2N)=O(N)
-        public static int[] Doubler(int[] items)
+        public static char[] Doubler(char[] items)
         {
             int count = 0;
-            var newArray = new int[items.Count()];
+            var newArray = new char[items.Count() * 2];
 
             for (var i = 0; i < items.Length; i++)
             {
